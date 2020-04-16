@@ -1,39 +1,99 @@
 /* Add CSS styling here */
-body{
-    margin: 0 auto;
+
+html{
+    font-family: "Open Sans"; 
+    font-size: 24px;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    font-family: "Open Sans";
+}
+
+div {
+    display: block;
+}
+
+.container{
+    margin: 0 auto;
+    width: auto;
+}
+
+
 header{
     background: gray;
     padding-top: 10px;
     border-bottom: black solid 2px;
 }
-.container {
-    width: 200px;
-    height: 120px;
-}
 
-/* resize images */
-.container img {
-    width: 100%;
-    height: auto;
-}
 
-h1 {
+h1, h2 {
     font-family: 'Gaegu', cursive;
-    margin-left: 20px;
+    padding: 0 30px;
     font-size: 50px;
   }
 
-nav{
+  .right_side{
+    position: absolute;
+    top: 12rem;
+    right: 12rem;
+
+    /*padding: 0 0 0 900px;*/
+    font-size: 50px;
+  }
+
+  .right_side h3{
+      font-family: 'Gaegu', cursive;
+      /*right: 20%; */
+      font-size: 50px;
+      position: relative;
+      left: 4rem;
+      margin-bottom: 4rem;
+  }
+    
+  .item_for_myname{
+    background: rgb(24, 224, 191);
+    color: rgb(50, 45, 75);
+    font-size: 24px;
+    text-decoration: none;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 4rem;
+    bottom: 80px;
+    }
+    
+    .item_for_myname:hover{
+        background: lightslategray;
+        color: white;
+    
+        }
+
+        .right_side p{
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            line-height: 1.4;
+            position: relative;
+            bottom: 90px;
+            left: 4rem;
+            }
+
+.header nav{
     display: flex;
     margin-left: 70px;
     box-sizing: border-box;
-
 }
 
 
-nav .item{
-background: rgb(224, 221, 24);
+.header nav .item{
+background: rgb(24, 224, 191);
 color: rgb(45, 66, 75);
 font-size: 24px;
 text-decoration: none;
@@ -44,20 +104,136 @@ margin-bottom: 20px;
 display: inline-block;
 }
 
-.item:hover{
-    background: lightslategray;
-    color: white;
+.header nav .item:hover{
+background: lightslategray;
+color: white;
+    }
+   
+    .header nav .active-item{
+        background: black;
+        color: white;
 
     }
+.my_project_img{
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+.my_project_img img{
+ border-radius: 1em;
+    }
 
-    p {
-        font-size: 16px;
-        font-family: roboto;
-        padding: 10px;
-        line-height: 1.4;
+   .img-container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+ .first_image_section{
+     display: inline-flex;
+     justify-content: space-evenly;
+     align-items: center;
+     align-content: center;
+     width: auto;    
         }
 
-    img  {
-        border-radius: 10px;
+        .first_image_section img{
+            width: auto;  
+            margin: 1rem;  
+               }
+
+            .first_figure .caption-txt{
+                font-size: smaller;
+                text-align: center;
+            }
+            
+
+ .second_image_section {
+            display: inline-flex;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;  
+            width: auto; 
+        }
+    
+        .second_image_section img{
+            width: auto;  
+            margin: 1rem;   }
+
+/* ignore temporarily
+        footer {
+            height: 100%;
+            width: 100%;
+            background: lightgray;
+            border-top: 2px solid black;
+            padding-top: 5%;
+            margin-top: 10px;
+          }
+          */
+
+          .footertag-class{
+            background: lightgrey;
+            padding: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+
+        .footer-nav{
+          display: flex;
+          justify-content: center;
 
       }
+      
+      .footertag-class nav a{
+          background: rgb(24, 224, 191);
+          color: rgb(45, 66, 75);
+          font-size: 24px;
+          text-decoration: none;
+          padding: 4px;
+          border: 1px solid black;
+          margin-bottom: 1rem;
+        
+        }
+
+    .footertag-class nav a:hover{
+    background-color: lightslategrey;
+    color: white;
+    }
+
+footer .topText{
+    font-size: larger;
+    margin-bottom: 1rem;
+}
+
+
+
+        /*
+    .first_image_section {
+        width: 290px;
+        height: 120px; 
+        display: inline-block;
+    }
+    .second_image_section {
+        width: 40px;
+        height: 120px; 
+    }
+        img  {
+        width: 100%;
+        border-radius: 10px;
+        display: inline-block;
+        margin-left: 9px;
+      }
+   /*
+      .container {
+        width: 200px;
+        height: 120px;
+    }
+    */
+     /*resize images */
+    /*.container img {
+        width: 100%;
+        height: auto; 
+    } 
+    */
