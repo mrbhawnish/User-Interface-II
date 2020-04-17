@@ -22,12 +22,16 @@ div {
     margin: 0 auto;
     width: auto;
 }
-
+.container-content{
+    display: flex;
+    justify-content: center;
+}
 
 header{
     background: gray;
     padding-top: 10px;
     border-bottom: black solid 2px;
+    display: flex;
 }
 
 
@@ -38,13 +42,20 @@ h1, h2 {
   }
 
   .right_side{
+   width: 30%;
+
+
+  }
+
+
+/* 
     position: absolute;
     top: 12rem;
     right: 12rem;
 
-    /*padding: 0 0 0 900px;*/
+   padding: 0 0 0 900px;
     font-size: 50px;
-  }
+  }  */
 
   .right_side h3{
       font-family: 'Gaegu', cursive;
@@ -101,7 +112,7 @@ padding: 4px;
 border: 1px solid black;
 border-radius: 0px;
 margin-bottom: 20px;
-display: inline-block;
+display: flex;
 }
 
 .header nav .item:hover{
@@ -118,6 +129,7 @@ color: white;
     margin-top: 3rem;
     margin-left: 5rem;
 }
+
 .my_project_img img{
  border-radius: 1em;
     }
@@ -210,9 +222,23 @@ footer .topText{
     font-size: larger;
     margin-bottom: 1rem;
 }
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .container {
+      width: 80%;
+      padding: 0;
+    }
+    .right_side {
+      width: 100%;
+    }
+  }
 
-
-
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .header, .container, .footertag-class{
+      width: 100%;
+    }
+  }
         /*
     .first_image_section {
         width: 290px;
